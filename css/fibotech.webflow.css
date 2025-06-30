@@ -1194,14 +1194,14 @@
   text-decoration: none;
 }
 
-.heading-16 {
+.heading-16-main {
   color: #fff;
   margin-right: 123px;
   font-size: 80px;
   line-height: 77px;
 }
 
-.heading-16.main {
+.heading-16-main {
   margin-right: 160px;
 }
 
