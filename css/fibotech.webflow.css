@@ -23,7 +23,7 @@
   background-image: url('../images/Frame-129.png');
   background-position: 50%;
   background-size: cover;
-  min-width: 100vh;
+  min-width: auto;
   min-height: 100vh;
 }
 
@@ -41,6 +41,7 @@
   padding: 10px 37px;
   font-weight: 500;
   display: flex;
+  font-size: 1rem;
 }
 
 .yellow-button-text:hover {
@@ -58,6 +59,7 @@
   align-items: center;
   min-width: 195px;
   display: flex;
+  font-size: 1rem;
 }
 
 .yellow-button-text.white-button:hover {
@@ -180,8 +182,7 @@
   grid-column-gap: 44px;
   grid-row-gap: 44px;
   margin-top: 25px;
-  margin-left: 1px;
-  margin-right: 113px;
+  margin-right: 40px;
   display: flex;
 }
 
@@ -216,6 +217,8 @@
   height: 60vh;
   margin-top: 50px;
   display: flex;
+  margin-right: 150px;
+  
 }
 
 .logo {
@@ -534,12 +537,12 @@
   background-image: url('../images/fibo-prin-2.png');
   background-position: 50%;
   background-size: cover;
-  min-height: 60vh;
+  min-height: 60%;
 }
 
 .hero-section.cde {
   background-image: url('../images/fibotech.png');
-  min-height: 60vh;
+  min-height: 60%;
 }
 
 .hero-section.blog {
@@ -599,7 +602,7 @@
   padding: 20px;
 }
 
-.button-yellow {
+.button-yellow-soluciones {
   text-align: center;
   background-color: #e8a80f;
   border: 1px solid #0000;
@@ -608,13 +611,13 @@
   max-width: 50%;
   min-height: 40px;
   max-height: 40px;
-  margin-left: 15px;
   font-family: Poppins, sans-serif;
   font-weight: 500;
   display: flex;
+  
 }
 
-.button-yellow:hover {
+.button-yellow-soluciones:hover {
   background-color: #e8a80f00;
   border: 1px solid #e8a80f;
 }
@@ -1179,7 +1182,6 @@
 .text-block-37 {
   color: #fff;
   margin-top: 6px;
-  margin-right: 120px;
   font-family: Poppins, sans-serif;
   font-size: 24px;
   line-height: 35px;
@@ -1196,14 +1198,11 @@
 
 .heading-16-main {
   color: #fff;
-  margin-right: 123px;
   font-size: 80px;
   line-height: 77px;
+  margin-right: 45px;
 }
 
-.heading-16-main {
-  margin-right: 160px;
-}
 
 .yellow-button-text-3 {
   outline-offset: 0px;
@@ -2082,6 +2081,34 @@
   border: 1px solid #e8a80f;
 }
 
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.menu-link {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+
 @media screen and (max-width: 479px) {
   .hero {
     background-position: 50%;
@@ -2100,17 +2127,18 @@
 
   .hero-content {
     align-items: center;
-    width: 100vh;
+    width: auto;
   }
 
   .logo {
     width: 150px;
     max-width: none;
-    height: 5vh;
+    height: 5%;
+    width: 10%;
   }
 
   .text-block-37 {
-    min-width: 50vh;
+    min-width: 50%;
   }
 
   .heading-16.main {
@@ -2132,5 +2160,184 @@
 #w-node-a5ef223e-c53a-c1e4-b8e9-1a5c89b96b9e-f5544ddc, #w-node-a5ef223e-c53a-c1e4-b8e9-1a5c89b96bac-f5544ddc, #w-node-a5ef223e-c53a-c1e4-b8e9-1a5c89b96bba-f5544ddc, #w-node-a5ef223e-c53a-c1e4-b8e9-1a5c89b96bc9-f5544ddc {
   justify-self: center;
 }
+
+
+@media screen and (max-width: 768px)  {
+  /* Your mobile styles go here */
+  .hamburger {
+    display: flex;
+    margin-right: 30px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+
+  
+  .hero-content {
+    display: flex;
+    align-items: center;
+    max-width: 768px;
+    text-align: center;
+    margin-right: 0px;
+  }
+
+  .heading-16-main {
+font-size: 3rem;
+line-height: 1.3;
+margin-right: 0px;
+  }
+
+  .text-block-37 {
+    font-size: 1.2rem;
+  }
+
+  .logo-link-block {
+    min-width: 150px;
+  }
+
+.button-container {
+  margin-right: 0px;
+}
+
+  .button-yellow-soluciones {
+    font-size: 0.8rem;
+  }
+
+  .button {
+    font-size: 0.8rem;
+  }
+ 
+  .servicios-cards-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 0 20px;
+    }
+
+    .service-card {
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .card-text-2 {
+      text-align: center;
+
+    }
+
+  .nuestrosclientes-heading {
+    text-align: center;
+    padding: 25px;
+  }
+  .nuestrosclientes-logo{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+  }
+
+  .heading-18 {
+    font-size: 30px;
+    
+  }
+
+  .w-layout-grid {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+
+
+  }
+
+  .mentalidad-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mentalidadimg-divblock {
+    margin-bottom: 35px;
+    text-align: center;
+  }
+
+  .mentalidadcontent-divblock {
+    padding-right: 20px;
+  }
+
+  .enfoque-wrapper {
+     display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+   .enfoque-wrapper-img {
+    margin-bottom: 35px;
+    text-align: center;
+  }
+
+  .enfoquecontent-divblock {
+    padding-right: 20px;
+
+  }
+
+  .div-block-4 {
+    margin-left: -180px;
+  }
+
+  .text-block-40 {
+    display: none;
+  }
+
+   .bottom-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .image-20 {
+    height: 25px;
+    margin-top: 10px;
+  }
+    @media screen and (max-width: 478px) {
+      .logo-footer img {
+        width: 25%;
+        height: auto;
+      }
+
+      .div-block-4 {
+        width: 50%;
+      
+      }
+
+      .imgfoot {
+        min-width: 100px;
+        margin-right: -80px;
+      }
+
+      .logo-footer {
+        padding-left: 30px;
+        padding-right: 30px;
+        grid-column-gap: -200px;
+      }
+    }
+
+    .off-screen-menu {
+      background-color: #000;
+      height: 100vh;
+      width: 100%;
+      max-width: 450px;
+      position: fixed;
+      top: 0;
+      right: -1200px;
+    
+    }
+    
+
 
 
