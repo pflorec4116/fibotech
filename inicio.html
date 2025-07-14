@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Fibotech</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+
+  <!-- Favicon -->
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+</head>
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const mobileNav = document.querySelector('.mobile-nav');
+
+  hamburger.addEventListener('click', () => {
+    mobileNav.classList.toggle('active');
+    hamburger.setAttribute(
+      'aria-expanded',
+      hamburger.getAttribute('aria-expanded') === 'true' ? 'false' : 'true'
+    );
+  });
+</script>
+
+<body>
+<section class="inicio-hero-section">
+   <div class="nav-section-container">
+  <div class="navmenu-container">
+    
+    <!-- Logo -->
+    <a href="inicio.html" class="nav-logo-linkblock">
+      <img 
+        sizes="(max-width: 1162px) 100vw, 1162px" 
+        srcset="images/Frame-130-p-500.png 500w, images/Frame-130-p-800.png 800w, images/Frame-130-p-1080.png 1080w, images/Frame-130.png 1162w" 
+        alt="Logo" 
+        src="images/Frame-130.png" 
+        loading="lazy" 
+        class="logo"
+      >
+    </a>
+
+    <!-- Desktop navigation -->
+    <div class="nav-menu"> 
+      <div class="menu-links">
+        <a href="inicio.html" aria-current="page" class="navmenu-linkblock">
+          <div class="navmenu-inner">
+            <div class="navmenu-dotwhite-link"></div>
+            <div class="navmenu-text">INICIO</div>
+          </div>
+        </a>
+        <a href="servicios.html" class="navmenu-linkblock">
+          <div class="navmenu-inner">
+            <div class="navmenu-dotwhite-link"></div>
+            <div class="navmenu-text">SERVICIOS</div>
+          </div>
+        </a>
+        <a href="casos-de-exito.html" class="navmenu-linkblock">
+          <div class="navmenu-inner">
+            <div class="navmenu-dotwhite-link"></div>
+            <div class="navmenu-text">CASOS DE ÉXITO</div>
+          </div>
+        </a>
+        <a href="blog.html" class="navmenu-linkblock">
+          <div class="navmenu-inner">
+            <div class="navmenu-dotwhite-link"></div>
+            <div class="navmenu-text">BLOG</div>
+          </div> 
+        </a>
+        <a href="contacto.html" class="navmenu-linkblock">
+          <div class="navmenu-inner">
+            <div class="navmenu-dotwhite-link"></div>
+            <div class="navmenu-text">CONTACTO</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Hamburger + mobile nav must be grouped together -->
+    <div class="mobile-wrapper">
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="mobile-nav">
+        <a href="inicio.html" class="mobile-nav-link">INICIO</a>
+        <a href="servicios.html" class="mobile-nav-link">SERVICIOS</a>
+        <a href="casos-de-exito.html" class="mobile-nav-link">CASOS DE ÉXITO</a>
+        <a href="blog.html" class="mobile-nav-link">BLOG</a>
+        <a href="contacto.html" class="mobile-nav-link">CONTACTO</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+    <div class="inicio-hero-content">
+      <h1 class="inicio-heading-h1">Soluciones<br>Digitales<br>a la Medida</h1>
+      <div class="inicio-subheading-h2"><span class="highlight-yellow">Transforma tu negocio </span> con el poder de <br>la tecnología de alto impacto.</div>
+      <div class="inicio-buttons-container">
+        <a href="#" class="inicio-button-yellow">Agendar una Llamada</a>
+        <a href="servicios.html" class="inicio-button-white">Ver Soluciones</a>
+      </div>
+    </div>
+</section>
+
+<section class="inicio-servicios-section">
+    <div class="inicio-servicios-container">
+        <h1 class="inicio-nuestros-servicios"> Nuestros Servicios</h1>
+    </div>
+    <div class="inicio-servicios-cards-container">
+ 
+        <div class="inicio-servicios-card"><img loading="lazy" src="images/icon1.svg" alt="" class="inicios-servicios-card-img">
+             <div class="card-text-2">Desarrollo de Software y Aplicaciones</div>
+         </div>
+        
+         <div class="inicio-servicios-card"><img loading="lazy" src="images/icon2.svg" alt="" class="inicios-servicios-card-img">
+             <div class="card-text-2">Asignación de Recursos/<br>Servicios Especializados</div>
+        </div>
+      
+        <div class="inicio-servicios-card"><img loading="lazy" src="images/icon3.svg" alt="" class="inicios-servicios-card-img">
+           <div class="card-text-2">Soluciones Low - Code</div>
+          </div>
+     
+        <div class="inicio-servicios-card"><img loading="lazy" src="images/icon4.svg" alt="" class="inicios-servicios-card-img">
+           <div class="card-text-2">Inteligencia Artificial</div>
+         </div>
+   
+    </div>
+
+        <div class="inicio-servicios-bottom">
+             <div class="inicio-servicios-bottom-text">Ofrecemos soluciones de base tecnológica enfocadas <br>en la innovación y la eficiencia.</div>
+            <div class="inicio-yellow-button">
+             <div class="yellow-button-text">Ver Más</div>
+         </div>
+    </div>
+</section>
+
+  <section class="inicio-nuestrosclientes-section">
+    <div class="inicio-nuestrosclientes-container">
+        <div class="inicio-nuestrosclientes-heading"><img loading="lazy" src="images/Capa_6.svg" alt="">
+             <h1 class="inicio-nuestrosclientes-heading">Nuestros Clientes</h1><img loading="lazy" src="images/Capa_6.svg" alt="">
+        </div>
+    </div>
+   
+        <div class="nuestrosclientes-logo"><img width="150" height="32" alt="" src="images/r2capital.png" loading="lazy" srcset="images/r2capital-p-500.png 500w, images/r2capital.png 708w" sizes="150px" class="cliente-logo"><img width="150" height="Auto" alt="" src="images/papajohnslogo.svg" loading="lazy" class="cliente-logo"><img width="150" sizes="150px" alt="" src="images/Walmart_Chile_Logo_1.svg.png" loading="lazy" srcset="images/Walmart_Chile_Logo_1.svg-p-500.png 500w, images/Walmart_Chile_Logo_1.svg-p-800.png 800w, images/Walmart_Chile_Logo_1.svg-p-1080.png 1080w, images/Walmart_Chile_Logo_1.svg.png 1200w" class="cliente-logo"><img width="120" loading="lazy" alt="" src="images/Logo-dimex111.png" class="cliente-logo"><img width="120" loading="lazy" alt="" src="images/logoBrownHomie.svg" class="cliente-logo">
+        </div>
+    </section>
+
+
+    <section class="inicio-expertos-section">
+
+  <h1>Expertos en transformación digital</h1>
+<a href="#" class="expertise-button">Ver casos de éxito</a>
+
+     <div class="expertise-grid-container">
+    
+    <!-- Left column: -->
+    <div class="expertise-card equipo-card">
+  <div class="equipo-card-content">
+    <img src="images/Rectangle-17.jpg" alt="Equipo" class="expertise-image equipo-image">
+
+    <div class="equipo-card-text">
+      <div class="expertise-tagline">Superación e innovación</div>
+      <h2 class="expertise-title">EQUIPO</h2>
+      <p class="expertise-description">
+        Con más de 10 años creando soluciones tecnológicas que sí funcionan, creemos en el poder de un equipo comprometido y capaz. Cada uno de nuestros ingenieros es cuidadosamente seleccionado por sus habilidades, pasión y convicción en la transformación digital.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="right-column">
+
+  <div class="expertise-card horizontal-card mobile-equipo">
+  <div class="horizontal-content">
+    <img src="images/Rectangle-17.jpg" alt="Equipo" class="expertise-image horizontal-image-equipo">
+    <div class="horizontal-text">
+      <div class="expertise-tagline">Superación e innovación</div>
+      <h2 class="expertise-title">EQUIPO</h2>
+      <p class="expertise-description">
+        Con más de 10 años creando soluciones tecnológicas que sí funcionan, creemos en el poder de un equipo comprometido y capaz. Cada uno de nuestros ingenieros es cuidadosamente seleccionado por sus habilidades, pasión y convicción en la transformación digital.
+    </div>
+  </div>
+</div>
+
+    <!-- Right top card -->
+<div class="expertise-card mentalidad-card horizontal-card">
+  <div class="horizontal-content">
+    <img src="images/Rectangle-18.png" alt="Mentalidad" class="expertise-image horizontal-image">
+    <div class="horizontal-text">
+      <div class="expertise-tagline">Dedicado y Apasionado.</div>
+      <h2 class="expertise-title">MENTALIDAD</h2>
+      <p class="expertise-description">
+        No trabajamos, cumplimos propósitos. Nos motiva servir a nuestros clientes y desbloquear el potencial de su negocio a través del desarrollo de software de alto impacto.
+      </p>
+    </div>
+  </div>
+</div>
+
+    <!-- Right bottom card -->
+   <div class="expertise-card enfoque-card horizontal-card">
+  <div class="horizontal-content">
+    <img src="images/Frame-43.png" alt="Enfoque" class="expertise-image horizontal-image">
+    <div class="horizontal-text">
+      <div class="expertise-tagline">Reimaginar y Reinventar</div>
+      <h2 class="expertise-title">ENFOQUE</h2>
+      <p class="expertise-description">
+        Creamos tecnología de punta para alcanzar nuevos niveles de innovación. Siempre buscamos ir un paso adelante en la transformación digital.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+
+ 
+</div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-logo">
+      <img src="images/Frame-130-p-500.png" alt="Fibotech Logo" class="footer-logo-img">
+    </div>
+
+    <div class="footer-contacts">
+      <a href="mailto:info@fibotech.com" class="footer-contact">
+        <img src="images/Capa_1-1.svg" alt="Email Icon" class="footer-icon">
+        <span>info@fibotech.com</span>
+      </a>
+      <a href="tel:+528120854380" class="footer-contact">
+        <img src="images/Vector.svg" alt="Phone Icon" class="footer-icon">
+        <span>+52 81 2085 4380</span>
+      </a>
+      <a href="https://wa.me/528114135910" target="_blank" class="footer-contact">
+        <img src="images/Capa_1.svg" alt="WhatsApp Icon" class="footer-icon">
+        <span>+52 81 1413 5910</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-divider"></div>
+
+  <div class="footer-bottom">
+    <p class="footer-copy">Copyrights © 2025 All Rights Reserved by Fibotech</p>
+    <div class="footer-socials">
+      <a href="https://facebook.com" target="_blank" class="footer-social-icon">
+        <img src="images/Capa_2.svg" alt="Facebook">
+      </a>
+      <a href="https://linkedin.com" target="_blank" class="footer-social-icon">
+        <img src="images/Capa_1-1_1.svg" alt="LinkedIn">
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
