@@ -17,18 +17,6 @@
   <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
 </head>
-<script>
-  const hamburger = document.querySelector('.hamburger');
-  const mobileNav = document.querySelector('.mobile-nav');
-
-  hamburger.addEventListener('click', () => {
-    mobileNav.classList.toggle('active');
-    hamburger.setAttribute(
-      'aria-expanded',
-      hamburger.getAttribute('aria-expanded') === 'true' ? 'false' : 'true'
-    );
-  });
-</script>
 
 <body>
 <section class="inicio-hero-section">
@@ -85,6 +73,19 @@
 
     <!-- Hamburger + mobile nav must be grouped together -->
     <div class="mobile-wrapper">
+
+    <a href="index.html" class="nav-logo-linkblock-mobile">
+      <img 
+        sizes="(max-width: 1162px) 100vw, 1162px" 
+        srcset="images/Frame-130-p-500.png 500w, images/Frame-130-p-800.png 800w, images/Frame-130-p-1080.png 1080w, images/Frame-130.png 1162w" 
+        alt="Logo" 
+        src="images/Frame-130.png" 
+        loading="lazy" 
+        class="logo"
+      >
+    </a>
+
+
       <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
         <span></span>
         <span></span>
@@ -92,7 +93,7 @@
       </button>
 
       <div class="mobile-nav">
-        <a href="index.html" class="mobile-nav-link">INICIO</a>
+        <a href="index.html" aria-current="page" class="mobile-nav-link">INICIO</a>
         <a href="servicios.html" class="mobile-nav-link">SERVICIOS</a>
         <a href="casos-de-exito.html" class="mobile-nav-link">CASOS DE ÉXITO</a>
         <a href="blog.html" class="mobile-nav-link">BLOG</a>
@@ -259,9 +260,23 @@
       <a href="https://linkedin.com" target="_blank" class="footer-social-icon">
         <img src="images/Capa_1-1_1.svg" alt="LinkedIn">
       </a>
+      
     </div>
   </div>
 </footer>
+
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const mobileNav = document.querySelector('.mobile-nav');
+
+  hamburger.addEventListener('click', () => {
+    mobileNav.classList.toggle('active');
+    hamburger.setAttribute(
+      'aria-expanded',
+      hamburger.getAttribute('aria-expanded') === 'true' ? 'false' : 'true'
+    );
+  });
+</script>
 
 
 

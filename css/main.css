@@ -117,6 +117,35 @@
 
 .mobile-nav {
   display: none;
+  flex-direction: column;
+  gap: 20px;
+   background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  z-index: 998;
+  text-align: right;
+  transition: all 0.3s ease;
+}
+
+.mobile-nav a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.mobile-nav a[aria-current="page"] {
+  color: #e8a80f;
+}
+.mobile-nav a:hover {
+  color: #f6b10d;
+}
+
+.nav-logo-linkblock-mobile {
+  display: none;
 }
 
 .hamburger {
@@ -1294,15 +1323,48 @@ body, html {
 
 @media (max-width: 768px) {
 
+.nav-section-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.3); /* translucent black */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 35px;
+  padding-left: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navmenu-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.nav-logo-linkblock {
+  display: none;
+}
+
+
   .nav-menu {
     display: none;
   }
 
   .mobile-wrapper {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
+    min-width: 100%;
+    justify-content: space-between;
   }
+
+  .nav-logo-linkblock-mobile {
+  display: flex;
+}
+    
 
   .hamburger {
     display: flex;
@@ -1311,7 +1373,6 @@ body, html {
     background: none;
     border: none;
     cursor: pointer;
-    margin-top: 10px;
   }
 
   .hamburger span {
@@ -1321,9 +1382,11 @@ body, html {
     transition: 0.3s;
   }
 
-  .mobile-nav.active {
+.mobile-nav.active {
     display: flex;
-  }
+}
+
+
 
 
   /* RESPONSIVE INICIO */
@@ -1417,7 +1480,38 @@ body, html {
     min-height: 180px;
   }
 
+  .footer-contact span {
+    display: none;
+  }
+
+  .footer-contact {
+    margin-left: 40px;
+  }
+
+  .footer-logo {
+    margin-left: 35px;
+  }
+
+.footer-bottom {
+  display: flex;
+  flex-direction: row;
+}
+
+  .footer-copy {
+    font-size: 10px;
+  }
+
+
   @media (max-width: 490px) {
+
+
+
+.inicio-heading-h1 {
+  font-size: 58px;
+}
+
+
+
 
     .expertise-card.horizontal-card.mobile-equipo {
     display: block;
