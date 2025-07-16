@@ -1505,10 +1505,17 @@ body, html {
   @media (max-width: 490px) {
 
 
+.inicio-hero-content {
+  margin-top: -400px;
+}
+
 
 .inicio-heading-h1 {
   font-size: 58px;
+  line-height: 80px;
 }
+
+
 
 
 
@@ -1519,6 +1526,57 @@ body, html {
 
   }
 
+  @media (max-width: 390px) {
+  .expertise-card.horizontal-card.mobile-equipo {
+    min-width: auto;
+    width: 100%;
+    padding: 16px;
+  }
+
+  .horizontal-content {
+    flex-direction: column; /* ← stack image above text */
+    align-items: center;    /* optional: center content horizontally */
+    text-align: center;
+  }
+
+  .horizontal-image {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    margin-bottom: 16px;
+  }
+
+  .horizontal-text {
+    width: 100%;
+    text-align: left; /* optional: override if needed */
+  }
+
+  .expertise-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .expertise-description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .footer-contact {
+    margin-left: 20px;
+  }
+
+  .footer-logo {
+    margin-left: -15px;
+  }
+
+  .footer-socials {
+    margin-left: 80px;
+  }
 }
+
+}
+
+
+  
 
 }
